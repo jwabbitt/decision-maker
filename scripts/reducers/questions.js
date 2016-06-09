@@ -1,4 +1,4 @@
-const question = {state, action} => {
+const question = (state, action) => {
   switch (action.type) {
     case 'ADD_QUESTION':
       return {
@@ -19,3 +19,5 @@ const questions = (state = [], action) => {
       return state
   }
 }
+
+export default questions
